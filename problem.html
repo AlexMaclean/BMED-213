@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="h-100">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#343a40">
+
+    <meta name="author" content="Alex MacLean">
+    <meta name="keywords" content="Alex, Maclean, Alex Maclean, Seattle">
+    <meta name="description" content="The personal wesite for Alex MacLEan of Seattle, Washington">
+
+    <title>Alex MacLean</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="lib/css/site.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/fontawesome.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/solid.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700,900">
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="lib/css/site.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/solid.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700,900">
+    </environment>
+
+
+    <style>
+        .page { width: 800px; }
+
+        .links { font-size: 1.1rem !important; }
+
+        .twitter-btn:hover { color: #1DA1F2 !important; }
+
+        .facebook-btn:hover { color: #5E80BF !important }
+
+        .linkedin-btn:hover { color: #00A0DC !important }
+
+        .instagram-btn:hover { color: #e95950 !important }
+    </style>
+
+</head>
+<body class="d-flex justify-content-center align-items-center h-100 p-4">
+
+
+<div class="card page m-auto bg-dark text-white">
+    <div class="card-header text-center">
+        <h1 class="title m-0"> The Problem
+        </h1>
+    </div>
+    <div class="card-body">
+        <h3 class="title m-0">Importance of Assays</h3>
+<p>One of the most important requirements for treating any disease is a reliable and cheep assay.
+An assay is a test used by doctors to determine if a patient has a specific illness and give a diagnosis.
+ While some conditions can be diagnosed through there symptoms alone, others are more mysterious or in order
+  to be treated effectively must be caught early. For example, many cancers produce few distinct symptoms and
+   must be caught before the metastasize. To catch these illnesses doctors often need more advanced assays that
+   rely on blood or tissue samples. For an assay to be effective it must not only separate healthy and diseased populations
+   but also be quick and cheep enough that doctors can administer it.
+</p>
+
+   <h3 class="title m-0">Genetic vs. Proteomic Assays</h3>
+<p>Two of the most well researched and broadly applicable forms of
+ assays are those relying on proteins and genes. Genetic assays involve
+  sequencing a portion of DNA or RNA to identify know irregularities that
+  are associated with a given condition. Proteomic assays on the other hand
+   involve analyzing the proteins this DNA encodes. Proteomic assays are sometimes
+    preferred because numerous genetic issues can lead to the same protein regularizes
+     and therefore the same condition. In these cases, it makes more sense to test for
+      problematic proteins.
+    </p>
+
+    <img src="protein.png" style="width: 100%;">
+
+    </div>
+    <div class="card-footer d-flex justify-content-center">
+        <a href="index.html" class="text-white"> <span class="fa fa-arrow-left mr-2"></span>Home </a>
+    </div>
+</div>
+
+
+<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
+
+<environment exclude="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+</environment>
+
+</body>
+</html>

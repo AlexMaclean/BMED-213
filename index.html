@@ -1,0 +1,92 @@
+﻿
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="h-100">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#343a40">
+
+    <meta name="author" content="Alex MacLean">
+    <meta name="keywords" content="Alex, Maclean, Alex Maclean, Seattle">
+    <meta name="description" content="The personal wesite for Alex MacLEan of Seattle, Washington">
+
+    <title>Alex MacLean</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="lib/css/site.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/fontawesome.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/solid.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700,900">
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="lib/css/site.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/solid.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700,900">
+    </environment>
+
+
+    <style>
+        .page { width: 500px; }
+
+        .links { font-size: 1.1rem !important; }
+
+        .twitter-btn:hover { color: #1DA1F2 !important; }
+
+        .facebook-btn:hover { color: #5E80BF !important }
+
+        .linkedin-btn:hover { color: #00A0DC !important }
+
+        .instagram-btn:hover { color: #e95950 !important }
+    </style>
+
+</head>
+<body class="d-flex justify-content-center align-items-center h-100 p-4">
+
+
+<div class="card page m-auto bg-dark text-white">
+    <div class="card-header text-center">
+        <h1 class="title m-0">
+            <img src="Title.png" style="width: 100%;">
+        </h1>
+        Triple the quadrupole, triple the fun
+    </div>
+    <div class="card-body">
+        <div class="btn-group-vertical w-100">
+        <a href="problem.html" class="btn btn-outline-light btn-block"> <h3 class="title m-0"><span class="fa fa-flask mr-2"></span>The Problem</h3> </a>
+        <a href="" class="btn btn-outline-light btn-block"> <h3 class="title m-0"><span class="fa fa-diagnoses mr-2"></span>Engineering & Biology</h3></a>
+        <a href="" class="btn btn-outline-light btn-block"><h3 class="title m-0"><span class="fa fa-drafting-compass mr-2"></span>Design</h3></a>
+        <a href="" class="btn btn-outline-light btn-block"><h3 class="title m-0"><span class="fa fa-prescription-bottle-alt mr-2"></span>Impacts</h3> </a>
+    </div>
+
+    </div>
+    <div class="card-footer d-flex justify-content-center">
+        Alex MacLean BMED 213
+    </div>
+</div>
+
+
+<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
+
+<environment exclude="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+</environment>
+
+</body>
+</html>
