@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="h-100">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#343a40">
+
+    <meta name="author" content="Alex MacLean">
+
+    <title>Triple Quadrupole Mass Spec - Design</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="lib/css/site.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/fontawesome.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/solid.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700,900">
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="lib/css/site.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="lib/FortAwsome/css/solid.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:700,900">
+    </environment>
+
+
+    <style>
+        .page { width: 800px; }
+
+        .links { font-size: 1.1rem !important; }
+
+        .span4 img {
+    margin-right: 10px;
+}
+.span4 .img-left {
+    float: left;
+}
+.span4 .img-right {
+    float: right;
+}
+    </style>
+
+</head>
+<body class="d-flex justify-content-center align-items-center h-100 p-4">
+
+
+<div class="card page m-auto bg-dark text-white">
+    <div class="card-header text-center">
+        <h1 class="title m-0"> The Design
+        </h1>
+    </div>
+    <div class="card-body">
+
+
+        <p>
+        While Triple Quadrupole Mass Spectrometers are complex
+        and the designs very depending on which model and scientific
+        instrument vendor they are made by, they can generally be said to
+         consist of five main parts.
+    </p>
+
+
+<div class="row m-2"><div class="span4">
+<div class="content-heading"><h3 class="title m-0">0 Ionization Chromatographic Column</h3></div>
+<img class="img-right img-fluid" src="colum.png" style="width: 100px;"/>
+<p>
+    In the first stage of the process, peptides which have been created by breaking apart the proteins in a sample with protease are ionized, giving them charge and then enter a chromatographic column. The chromatographic column is designed such that molecules elude off of it over time based on some known property, such a hydrophobicity.
+</p>
+</div></div>
+
+<div class="row m-2"><div class="span4">
+<div class="content-heading"><h3 class="title m-0">1 First Quadrupole</h3></div>
+<img class="img-right m-2" src="quad.png" style="width: 100px;"/>
+<p>
+    As the name implies, each quadrupole consists of 4 metal rods. These rods are charged such that peptides of a certain mass to charge ratio (m/z) are pushed to the center and along to the next stage while other peptides are pushed out of the quadrupole
+</p>
+</div></div>
+
+<div class="row m-2"><div class="span4">
+<div class="content-heading"><h3 class="title m-0">2 Collision Cell</h3></div>
+<img class="img-right m-2" src="colision.png" style="width: 100px;"/>
+<p>
+    In the collision cell the peptides of the right mass to charge ratio to make it past the first quadrupole are further broken apart by gas colliding with them. This process can predictably generate new peptide fragments with different mass to charge ratios
+</p>
+</div></div>
+
+<div class="row m-2"><div class="span4">
+<div class="content-heading"><h3 class="title m-0">3 Third Quadrupole</h3></div>
+<img class="img-right m-2" src="quad.png" style="width: 100px;"/>
+<p>
+    The third quadrupole is similar to the second, however it is generally set to a different change. This way the only peptides that make it through the process are those that have the correct mass to charge ratio and break into fragments that also have the correct mass to charge ratio.
+</p>
+</div></div>
+
+<div class="row m-2">
+<div class="span4">
+<div class="content-heading"><h3 class="title m-0">4 Detector</h3></div>
+<img class="img-right m-2" src="sensor.png" style="width: 100px;"/>
+<p>
+    At the end of a mass spectrometer there is a detector which simply measures the rate of particles colliding with it. If the machine is working correctly these are only particles which have made it through all three stages.
+</p>
+</div></div>
+
+
+    </div>
+    <div class="card-footer d-flex justify-content-center">
+        <a href="index.html" class="text-white"> <span class="fa fa-arrow-left mr-2"></span>Home </a>
+    </div>
+</div>
+
+
+<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
+
+<environment exclude="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+</environment>
+
+</body>
+</html>
